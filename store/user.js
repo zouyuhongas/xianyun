@@ -1,9 +1,12 @@
 // 用户管理
-export const state = {
+export const state =()=> {
+   return{
     userInfo: {
+        // 然后在页面里面拿到的值存储到这里,利用commit再调用
         token: "",
         user: {}
     }
+   }
 }
 
 export const mutations = {
